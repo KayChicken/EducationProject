@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.card {
+    position: relative;
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    width: 300px;
+    background-color: rgb(72, 132, 185);
+    height: 200px;
+}
+
+.side {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+
+
+.side-back {
+    transform: rotateY(180deg);
+
+}
